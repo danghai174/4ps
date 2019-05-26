@@ -40,8 +40,10 @@
         if (value) {
           $('.your-choice-was').show();
           $('.choice').text(value);
+          console.log(value);
         } else {
           $('.your-choice-was').hide();
+          console.log(value);
         }
       }
     });
@@ -56,7 +58,6 @@
   var path = getLocation(top.location.href);
   ticketnumber = path.pathname.split("/")[3];
   console.log(ticketnumber);
-  console.log($('.choice').text(value))
   </script>
 
 
