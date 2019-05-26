@@ -48,6 +48,11 @@
   </script>
   <script>console.log(top.location.href);</script>
   <script>
+  var getLocation = function(href) {
+    var l = document.createElement("a");
+    l.href = href;
+    return l;
+  };
   var path = getLocation(top.location.href);
   console.log(path.pathname);
   </script>
