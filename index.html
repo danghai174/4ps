@@ -27,8 +27,11 @@
   <h3> Rate us </h3>
     <div class='starrr' id='star1'></div>
     <script>
-      var test= ('#star1').starrr();
-      test.prototype.setRating(4);
+      $('#star1').starrr({
+       function() {
+        Starrr.prototype.setRating = function(4){};
+       }
+      });
     </script>
     <div>
     <span class='your-choice-was' style='display: none;'>
