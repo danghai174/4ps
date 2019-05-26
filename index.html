@@ -35,15 +35,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <script src="dist/starrr.js"></script>
   <script>
+    var value;
     $('#star1').starrr({
       change: function(e, value){
         if (value) {
           $('.your-choice-was').show();
           $('.choice').text(value);
-          console.log(value);
         } else {
           $('.your-choice-was').hide();
-          console.log(value);
         }
       }
     });
@@ -58,6 +57,7 @@
   var path = getLocation(top.location.href);
   ticketnumber = path.pathname.split("/")[3];
   console.log(ticketnumber);
+  console.log(value);
   </script>
 
 
