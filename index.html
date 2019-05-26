@@ -35,6 +35,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <script src="dist/starrr.js"></script>
   <script>
+      var getLocation = function(href) {
+        var l = document.createElement("a");
+        l.href = href;
+        return l;
+      };
+      var path = getLocation(top.location.href);
+      ticketnumber = path.pathname.split("/")[3];
+      </script>
+  <script>
     var value;
     $('#star1').starrr({
       change: function(e, value){
@@ -44,22 +53,10 @@
         } else {
           $('.your-choice-was').hide();
         }
+        console.log(ticketnumber);
+        console.log(value);
       }
     });
   </script>
-  <script>console.log(top.location.href);</script>
-  <script>
-  var getLocation = function(href) {
-    var l = document.createElement("a");
-    l.href = href;
-    return l;
-  };
-  var path = getLocation(top.location.href);
-  ticketnumber = path.pathname.split("/")[3];
-  console.log(ticketnumber);
-  console.log(value);
-  </script>
-
-
 </body>
 </html>
