@@ -35,17 +35,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <script src="dist/starrr.js"></script>
   <script>
-      var value = 4;
-      $('#star1').starrr({
-        change: function(e, value){
-            $('.your-choice-was').show();
-            $('.choice').text(value);
-          console.log(ticketnumber);
-          console.log(value);
-        }
-      });
-    </script>
-  <script>
       var getLocation = function(href) {
         var l = document.createElement("a");
         l.href = href;
@@ -56,6 +45,8 @@
   </script>
   <script>
     $('#star1').starrr({
+      max: 10;
+      rating: 10;
       change: function(e, value){
         if (value) {
           $('.your-choice-was').show();
