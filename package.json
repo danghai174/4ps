@@ -5,9 +5,21 @@
   "author": "ajb <adam@dobt.co>",
   "license": "MIT",
   "devDependencies": {
-    "grunt-contrib-sass": "^0.9.2",
+    "grunt": "^0.4.5",
     "grunt-contrib-coffee": "^0.13.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt": "^0.4.5"
-  }
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "description": "starrr ======",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobtco/starrr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dobtco/starrr/issues"
+  },
+  "homepage": "https://github.com/dobtco/starrr#readme"
 }
