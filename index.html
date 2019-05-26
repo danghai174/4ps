@@ -25,6 +25,7 @@
 </head>
 <body>
   <h3> Rate us </h3>
+    <script>var value = 5;</script>
     <div class='starrr' id='star1'></div>
     <div>
     <span class='your-choice-was' style='display: none;'>
@@ -42,9 +43,8 @@
       };
       var path = getLocation(top.location.href);
       ticketnumber = path.pathname.split("/")[3];
-      </script>
+  </script>
   <script>
-    var value;
     $('#star1').starrr({
       change: function(e, value){
         if (value) {
