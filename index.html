@@ -26,13 +26,6 @@
 <body>
   <h3> Rate us </h3>
     <div class='starrr' id='star1'></div>
-    <script>
-      $('#star1').starrr({
-       function() {
-        Starrr.prototype.setRating = function('4'){};
-       }
-      });
-    </script>
     <div>
     <span class='your-choice-was' style='display: none;'>
        Your rating was <span class='choice'></span>.
@@ -41,6 +34,17 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <script src="dist/starrr.js"></script>
+  <script>
+      var value = 4;
+      $('#star1').starrr({
+        change: function(e, value){
+            $('.your-choice-was').show();
+            $('.choice').text(value);
+          console.log(ticketnumber);
+          console.log(value);
+        }
+      });
+    </script>
   <script>
       var getLocation = function(href) {
         var l = document.createElement("a");
