@@ -49,7 +49,7 @@
     $('#star1').starrr({
       max: 5,
       rating: parseInt(current_rating),
-      change: function(e, value){
+      function(e, value){
         if (value) {
           $('.your-choice-was').show();
           $('.choice').text(value);
