@@ -46,7 +46,8 @@
     var current_rating;
     jQuery.get(url, function(data) {current_rating=data});
     console.log(current_rating);
-    obj =  {   max: 5,
+    $('#star1').starrr({
+      max: 5,
       rating: parseInt(current_rating),
       change: function(e, value){
         if (value) {
@@ -58,9 +59,6 @@
         console.log(ticketnumber);
         console.log(value);
       }
-    };
-    $('#star1').starrr({
-      obj
     });
   </script>
 </body>
