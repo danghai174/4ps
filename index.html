@@ -46,7 +46,7 @@
   <script>
     var url= "https://support.pizza4ps.com/api/search" + ticketnumber;
     var current_rating;
-    $.get(url, function(data) {current_rating=data});
+    jQuery.get(url, function(data) {current_rating=data});
     console.log(current_rating);
     obj =  {   max: 5,
       rating: parseInt(current_rating),
