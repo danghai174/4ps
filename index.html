@@ -42,8 +42,6 @@
       };
       var path = getLocation(top.location.href);
       ticketnumber = path.pathname.split("/")[3];
-  </script>
-  <script>
     var url= "https://support.pizza4ps.com/api/search" + ticketnumber;
     var current_rating;
     jQuery.get(url, function(data) {current_rating=data});
