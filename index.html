@@ -44,9 +44,13 @@
       ticketnumber = path.pathname.split("/")[3];
   </script>
   <script>
+    var url= "https://support.pizza4ps.com/api/search" + ticketnumber;
+    var current_rating;
+    $.get(url, function(data) {current_rating=data});
+    console.log(current_rating);
     $('#star1').starrr({
       max: 5,
-      rating: 0,
+      rating: current_rating,
       change: function(e, value){
         if (value) {
           $('.your-choice-was').show();
