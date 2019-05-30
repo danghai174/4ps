@@ -45,10 +45,9 @@
     var url= "https://support.pizza4ps.com/api/search" + ticketnumber;
     var current_rating;
     jQuery.get(url, function(data) {current_rating=data});
-    console.log(current_rating);
     $('#star1').starrr({
       max: 5,
-      rating: parseInt(current_rating),
+      rating: 0,
       function(e, value){
         if (value) {
           $('.your-choice-was').show();
