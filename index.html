@@ -48,7 +48,7 @@
     $('#star1').starrr({
       max: 5,
       rating: 0,
-      function(e, value){
+      change: function(e, value){
         if (value) {
           $('.your-choice-was').show();
           $('.choice').text(value);
