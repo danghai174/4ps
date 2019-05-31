@@ -42,7 +42,7 @@
       };
       var path = getLocation(top.location.href);
       ticketnumber = path.pathname.split("/")[3];
-    var url= "https://support.pizza4ps.com/api/search" + ticketnumber;
+    var url= "https://support.pizza4ps.com/api3/search" + ticketnumber;
     var current_rating;
     jQuery.get(url, function(data) {current_rating=data});
     $('#star1').starrr({
@@ -52,7 +52,7 @@
         if (value) {
           $('.your-choice-was').show();
           $('.choice').text(value);
-          var url= "https://support.pizza4ps.com/api/update" + ticketnumber + "/rating" + value;
+          var url= "https://support.pizza4ps.com/api3/update" + ticketnumber + "/rating" + value;
           jQuery.get(url, function(data) {current_rating=data});
         } else {
           $('.your-choice-was').hide();
